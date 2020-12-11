@@ -1,0 +1,15 @@
+{
+  "name": "Mozilla Firefox",
+  "short_name": "Firefox",
+  "display": "standalone",
+  "start_url": "firefox.app",
+  "theme_color": "#17112f",
+  "background_color": "#20123a",
+  "icons": [
+    {
+      "src": "firefox_1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
