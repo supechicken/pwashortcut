@@ -14,7 +14,7 @@ esac
 ################################################
 echo "Making a customize PWA configuration"
 read -p "Application Name:" appname
-if [[ '${APP[*]}' == '$appname' ]] 
+if [[ " ${APP[*]} " == *" $appname "* ]] 
 then
     read -r -p "$appname has a preinstalled customize theme, do you wanna use it? [y/N] " appname_response
     case "$appname_response" in
@@ -31,7 +31,7 @@ fi
 read -p "Enter path of the icon you want to use in ${appname^}:" icon_path
 read -p "Enter the window color of PWA you want to use in HEX (without #):" window_color
 read -p "Enter the background color of PWA you want to use in HEX (without #):" background_color
-cp $icon_path $PWA_PREFIX/$appname/brew.png
-sed 's/000000/$window_color/1' $PWA_PREFIX/$appname/manifest.json
-sed 's/000000/$background_color/2' $PWA_PREFIX/$appname/manifest.json
+cp $PWA_PREFIX/$appname/templates/$appname_* $PWA_PREFIX/$appname/brew.png
+sed 's/000000/$window_color/1' $PWA_PREFIX/$appname/templates/manifest.json
+sed 's/000000/$background_color/2' $PWA_PREFIX/$appname/templates/manifest.json
 echo "A customize PWA configuration file for ${appname^} created!"
