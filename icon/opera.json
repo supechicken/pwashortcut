@@ -1,0 +1,15 @@
+{
+  "name": "Opera",
+  "short_name": "Opera",
+  "display": "standalone",
+  "start_url": "opera.app",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "icons": [
+    {
+      "src": "opera_1024x1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
