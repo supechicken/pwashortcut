@@ -1,0 +1,14 @@
+{
+  "name": "Skype",
+  "short_name": "Skype",
+  "display": "standalone",
+  "start_url": "skype.app",
+  "theme_color": "#00adef",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "skype_1000x1000.svg",
+      "sizes": "1024x1024"
+    }
+  ]
+}
