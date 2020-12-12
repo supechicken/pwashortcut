@@ -7,7 +7,7 @@
   "background_color": "#20123a",
   "icons": [
     {
-      "src": "firefox_1024x1024.png",
+      "src": "icon/firefox_1024x1024.png",
       "sizes": "1024x1024",
       "type": "image/png"
     }
