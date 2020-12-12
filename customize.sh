@@ -10,6 +10,7 @@ case $1 in
        ;;
   -i)
        echo "Available preinstalled themes:"
+       echo ${APP[*]}
 esac
 ################################################
 echo "Making a customize PWA configuration"
@@ -21,17 +22,14 @@ then
       [yY][eE][sS]|[yY]) 
         cp $icon_dir/$appname.json $PWA_PREFIX/$appname/templates/manifest.json
         echo "Using preinstalled configuration"
-        break
-        ;;
-      *)
-        break
+        exit 0
         ;;
     esac
 fi
 read -p "Enter path of the icon you want to use in ${appname^}:" icon_path
 read -p "Enter the window color of PWA you want to use in HEX (without #):" window_color
 read -p "Enter the background color of PWA you want to use in HEX (without #):" background_color
-cp $PWA_PREFIX/$appname/templates/$appname_* $PWA_PREFIX/$appname/brew.png
+cp $icon_path $PWA_PREFIX/$appname/icon/brew.png
 sed 's/000000/$window_color/1' $PWA_PREFIX/$appname/templates/manifest.json
 sed 's/000000/$background_color/2' $PWA_PREFIX/$appname/templates/manifest.json
 echo "A customize PWA configuration file for ${appname^} created!"
