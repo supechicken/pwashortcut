@@ -4,8 +4,8 @@ class Pwashortcut < Package
   description 'Scripts to create a PWA shortcut on ChromeOS dock for Chromebrew GUI Apps.'
   homepage 'https://github.com/supechicken666/pwashortcut/'
   version '1.1'
-  source_url 'https://github.com/supechicken666/pwashortcut/archive/0.9.tar.gz'
-  source_sha256 '5d209548e5e255955d16dfae782c45f44c556053e43a5bedc3f2b8dca35010de'
+  source_url 'https://github.com/supechicken666/pwashortcut/archive/1.0-stable.tar.gz'
+  source_sha256 '9e028cb35ce6b0ba840b476d4641be496686d4ee16c73935c48d1fb30ca70d07'
 
   def self.build
     system "pip install flask"
