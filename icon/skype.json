@@ -7,7 +7,7 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "skype_1000x1000.svg",
+      "src": "icon/skype_1000x1000.svg",
       "sizes": "1024x1024"
     }
   ]
