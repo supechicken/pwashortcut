@@ -95,16 +95,13 @@ case ${1} in
           ;;
     -i)
           bash $tools/customize.sh -i
-          break
           ;;
     -g)   
           bash $tools/customize.sh $tools/icon/ $PWA_PREFIX
-          break
           ;;
     -n)
           mkdir -p $PWA_PREFIX/$2/templates
           cp -r $tools/* $PWA_PREFIX/$2/templates
-          cp -r $tools/* $PWA_PREFIX/templates
           mv $PWA_PREFIX/$2/templates/manifest.json.bak $PWA_PREFIX/$2/templates/manifest.json
           sed -i \"s/linuxapp/${2^}/g\" $PWA_PREFIX/$2/templates/manifest.json
           sed -i \"s/unixapp/$2/g\" $PWA_PREFIX/$2/templates/manifest.json
