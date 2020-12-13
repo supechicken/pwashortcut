@@ -1,5 +1,5 @@
 wget https://github.com/supechicken666/pwashortcut/archive/testing.zip
-unzip test.zip
+unzip testing.zip
 mkdir -p /usr/local/lib/pwa/tools/
 mkdir -p /usr/local/lib/pwa/templates/
 cp pwashortcut-testing/installer.html /usr/local/lib/pwa/templates/
