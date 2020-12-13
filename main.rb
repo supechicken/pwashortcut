@@ -1,3 +1,4 @@
+CREW_PREFIX = "/usr/local"
 system "cat <<'EOF'> pwashortcut
 #!/bin/bash
 # A simple start script
@@ -42,7 +43,7 @@ case ${1} in
           echo \"  def $2_run():\" >> $FLASK_APP
           echo \"    os.system('$2')\" >> $FLASK_APP
           echo \"  start_$2 = Thread(target=$2_run)\" >> $FLASK_APP
-          echo \"  start_$2()\" >> $FLASK_APP
+          echo \"  start_$2.start()\" >> $FLASK_APP
           echo \"  return 'You can close this window now'\" >> $FLASK_APP
           echo \"@app.route('/$2/')\" >> $FLASK_APP
           echo \"def installer_$2():\" >> $FLASK_APP
