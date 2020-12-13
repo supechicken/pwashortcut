@@ -91,4 +91,4 @@ case ${1} in
           ;;
 esac
 EOF"
-FileUtils.cp "pwashortcut" "/usr/local/bin/"
+system "cp pwashortcut /usr/local/bin/"
