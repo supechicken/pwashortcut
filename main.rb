@@ -1,5 +1,3 @@
-require 'FileUtils'
-
 system "cat <<'EOF'> pwashortcut
 #!/bin/bash
 # A simple start script
