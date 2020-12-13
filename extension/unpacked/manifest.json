@@ -1,0 +1,7 @@
+{
+  "manifest_version": 2,
+  "name": "Exit",
+  "version": "1.1",
+  "options_page": "exit.html",
+  "content_security_policy": "script-src 'self' 'sha256-KcepYoj04x54cIVp11N0Ylqh+nuxcnhUZDGF48tpY5I='"
+}
