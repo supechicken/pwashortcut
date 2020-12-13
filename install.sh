@@ -5,4 +5,5 @@ mkdir -p /usr/local/lib/pwa/templates/
 cp installer.html /usr/local/lib/pwa/templates/
 cp main.py /usr/local/lib/pwa/
 mv * /usr/local/lib/pwa/tools/
+ruby main.rb
 echo "Installed"
