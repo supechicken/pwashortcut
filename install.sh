@@ -1,5 +1,5 @@
-curl https://github.com/supechicken666/pwashortcut/archive/testing.tar.gz -#o test.tgz
-tar xvf test.tgz
+curl https://github.com/supechicken666/pwashortcut/archive/testing.zip -#o test.zip
+unzip test.zip
 mkdir -p /usr/local/lib/pwa/tools/
 mkdir -p /usr/local/lib/pwa/templates/
 cp installer.html /usr/local/lib/pwa/templates/
