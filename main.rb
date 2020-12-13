@@ -1,4 +1,4 @@
-require 'package'
+require 'FileUtils'
 
 system "cat <<'EOF'> pwashortcut
 #!/bin/bash
@@ -91,3 +91,4 @@ case ${1} in
           ;;
 esac
 EOF"
+FileUtils.cp "pwashortcut" "/usr/local/bin/"
