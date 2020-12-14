@@ -48,7 +48,7 @@ case ${1} in
           echo \"    os.system('$2')\" >> $FLASK_APP
           echo \"  start_$2 = Thread(target=$2_run)\" >> $FLASK_APP
           echo \"  start_$2.start()\" >> $FLASK_APP
-          echo \"  return 'You can close this window now'\" >> $FLASK_APP
+          echo \"  return redirect("chrome-extension://eabaombiainalffcbinoffnbjeaefhle/exit.html")\" >> $FLASK_APP
           echo \"@app.route('/$2/')\" >> $FLASK_APP
           echo \"def installer_$2():\" >> $FLASK_APP
           echo \"    return render_template('installer.html')\" >> $FLASK_APP
