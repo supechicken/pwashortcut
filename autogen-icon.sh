@@ -13,7 +13,7 @@ if [[ "$num" != "1" ]]
 then
 echo "$num icons were found for $appname"
 icon
-read -r -p "Which icon you want to use?" appname_response
+read -r -p "Which icon you want to use: " appname_response
 iconpath=$path/$appname_response
 else
 iconpath=$path/`icon`
