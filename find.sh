@@ -1,9 +1,9 @@
 #!/bin/bash
-CREW_PREFIX=/usr/local
-PWA_PREFIX=/usr/local/lib/pwa
+CREW_PREFIX=$1
+PWA_PREFIX=$CREW_PREFIX/lib/pwa
 FLASK_APP=$PWA_PREFIX/main.py
 tools=$PWA_PREFIX/tools
-var=`find /usr/local/ -name *.desktop 2> /dev/null`
+var=`find $CREW_PREFIX -name *.desktop 2> /dev/null`
 rm ~/deploy.list
 touch ~/deploy.list
 for file in $var
