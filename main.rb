@@ -12,6 +12,7 @@ pkill flask
 case ${1} in
     -d)
           bash $tools/find.sh
+          ;;
     -h)
           echo  '
 ===================================
