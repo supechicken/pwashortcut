@@ -12,6 +12,7 @@ case $1 in
        echo "Available preinstalled themes:"
        echo ${APP[*]}
        exit 0
+       ;;
 esac
 ################################################
 echo "Making a customize PWA configuration"
