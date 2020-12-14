@@ -10,6 +10,7 @@ case $1 in
   -i)
        echo "Available preinstalled themes:"
        icon_dir=$2
+       APP=`ls -1 $icon_dir | grep .json`
        echo $APP
        exit 0
        ;;
