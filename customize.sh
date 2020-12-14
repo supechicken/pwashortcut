@@ -16,7 +16,7 @@ esac
 ################################################
 echo "Making a customize PWA configuration"
 read -p "Application Name: " appname
-if [[ `$APP | grep $appname` == "" ]] 
+if [[ `echo $APP | grep $appname` != "" ]] 
 then
     read -r -p "${appname^} has a preinstalled customize theme, do you wanna use it? [y/N] " appname_response
     case "$appname_response" in
