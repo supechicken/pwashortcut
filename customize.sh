@@ -14,10 +14,10 @@ case $1 in
 esac
 ################################################
 echo "Making a customize PWA configuration"
-read -p "Application Name:" appname
+read -p "Application Name: " appname
 if [[ " ${APP[*]} " == *" $appname "* ]] 
 then
-    read -r -p "$appname has a preinstalled customize theme, do you wanna use it? [y/N] " appname_response
+    read -r -p "${appname^} has a preinstalled customize theme, do you wanna use it? [y/N] " appname_response
     case "$appname_response" in
       [yY][eE][sS]|[yY]) 
         cp $icon_dir/$appname.json $PWA_PREFIX/$appname/templates/manifest.json
