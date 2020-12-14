@@ -24,7 +24,7 @@ case ${1} in
   -f                  Pass option to Flask
   -g                  PWA icon chooser
   -i                  Available preinstalled icons for PWA icon chooser
-  -d                  Generate shortcuts from *.desktop files
+  -d                  Generate shortcuts from .desktop files
 ==================================='
           ;;
     -i)
