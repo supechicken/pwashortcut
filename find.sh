@@ -52,7 +52,7 @@ do
     echo "        return send_from_directory('$webpath/templates', path)" >> $FLASK_APP
     echo " " >> $FLASK_APP
     #######################
-    bash $tools/autogen-icon.sh $icon $CREW_PREFIX $appname
+    bash $tools/autogen-icon.sh $icon $CREW_PREFIX "$appname" $webpath
     #######################
     echo "localhost:5000/$webpath - $appname" >> ~/deploy.list
     echo "Shortcut for $appname deployed!"
