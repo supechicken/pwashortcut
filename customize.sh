@@ -1,8 +1,7 @@
 #!/bin/bash
 icon_dir=$1
 PWA_PREFIX=$2
-APP[0]="opera"
-APP[1]="firefox"
+APP=`ls -1 $icon_dir | grep *.json`
 case $1 in
   -h)
        echo "Run 'pwashortcut -h' for more information"
@@ -10,14 +9,14 @@ case $1 in
        ;;
   -i)
        echo "Available preinstalled themes:"
-       echo ${APP[*]}
+       echo $APP
        exit 0
        ;;
 esac
 ################################################
 echo "Making a customize PWA configuration"
 read -p "Application Name: " appname
-if [[ " ${APP[*]} " == *" $appname "* ]] 
+if [[ `$APP | grep $appname` == "" ]] 
 then
     read -r -p "${appname^} has a preinstalled customize theme, do you wanna use it? [y/N] " appname_response
     case "$appname_response" in
