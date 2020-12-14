@@ -1,7 +1,7 @@
 #!/bin/bash
 icon_dir=$1
 PWA_PREFIX=$2
-APP=`ls -1 $icon_dir | grep *.json`
+APP=`ls -1 $icon_dir | grep .json`
 case $1 in
   -h)
        echo "Run 'pwashortcut -h' for more information"
