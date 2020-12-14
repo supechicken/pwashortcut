@@ -26,6 +26,7 @@ rm ${iconpath}.png
 else
 cp $iconpath $PWA_PREFIX/$webpath/templates/icon/brew.png
 fi
+echo "Icon for $appname deployed!"
 else
 echo "No icon were found for $appname :/"
 fi
