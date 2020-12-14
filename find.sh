@@ -42,7 +42,7 @@ do
     echo "    os.system('$path')" >> $FLASK_APP
     echo "  start_$webpath = Thread(target=${webpath}_run)" >> $FLASK_APP
     echo "  start_$webpath.start()" >> $FLASK_APP
-    echo "  return redirect("chrome-extension://eabaombiainalffcbinoffnbjeaefhle/exit.html")" >> $FLASK_APP
+    echo "  return redirect('chrome-extension://eabaombiainalffcbinoffnbjeaefhle/exit.html')" >> $FLASK_APP
     echo "@app.route('/$webpath/')" >> $FLASK_APP
     echo "def installer_${webpath}():" >> $FLASK_APP
     echo "    return render_template('installer.html')" >> $FLASK_APP
