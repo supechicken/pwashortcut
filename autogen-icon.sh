@@ -24,7 +24,6 @@ convert $iconpath ${iconpath}.png
 cp ${iconpath}.png $PWA_PREFIX/$webpath/templates/icon/brew.png
 rm ${iconpath}.png
 else
-echo $iconpath
 cp $iconpath $PWA_PREFIX/$webpath/templates/icon/brew.png
 fi
 else
