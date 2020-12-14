@@ -10,6 +10,8 @@ export FLASK_APP=$PWA_PREFIX/main.py
 export FLASK_ENV=development
 pkill flask
 case ${1} in
+    -d)
+          bash $tools/find.sh
     -h)
           echo  '
 ===================================
@@ -22,6 +24,7 @@ case ${1} in
   -f                  Pass option to Flask
   -g                  PWA icon chooser
   -i                  Available preinstalled icons for PWA icon chooser
+  -d                  Generate shortcuts from *.desktop files
 ==================================='
           ;;
     -i)
