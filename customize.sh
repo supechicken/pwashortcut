@@ -11,6 +11,7 @@ case $1 in
   -i)
        echo "Available preinstalled themes:"
        echo ${APP[*]}
+       exit 0
 esac
 ################################################
 echo "Making a customize PWA configuration"
