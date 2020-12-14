@@ -1,7 +1,9 @@
 #!/bin/bash
 CREW_PREFIX=$2
+PWA_PREFIX=$CREW_PREFIX/lib/pwa
 appname=$3
 icon=$1
+webpath=$4
 path=$CREW_PREFIX/share/pixmaps
 icon () { ls -1 $path 2> /dev/null | grep $icon; }
 num=`icon | wc -l`
@@ -17,7 +19,9 @@ fi
 if [[ $iconpath = *.xpm ]]
 then
 convert $iconpath ${iconpath}.png
-echo ${iconpath}.png
+cp ${iconpath}.png $PWA_PREFIX/$webname/templates/icon/brew.png
+rm ${iconpath}.png
 else
 echo $iconpath
+cp $iconpath $PWA_PREFIX/$webname/templates/icon/brew.png
 fi
