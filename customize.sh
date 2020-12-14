@@ -9,6 +9,7 @@ case $1 in
        ;;
   -i)
        echo "Available preinstalled themes:"
+       icon_dir=$2
        echo $APP
        exit 0
        ;;
